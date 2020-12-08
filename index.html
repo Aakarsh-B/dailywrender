@@ -3,9 +3,38 @@
 <head>
 	<title>Instafeed on Your Website</title>
 	<style type="text/css">
-		a img{ 
-			width: 25%;
-		}
+		$lg: 580px;
+
+html, 
+body {
+  margin: 0;
+  padding: 10px;
+  background: darken(whitesmoke, 10%);
+}
+#instafeed {
+  max-width:1080px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  
+  a {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 50%;
+    background: white;
+    
+    @media only screen and (min-width: $lg) {
+      width: 25%;
+    }
+    
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+}
 	</style>
 </head>
 <body>
@@ -17,10 +46,15 @@
 	<script src="https://cdn.jsdelivr.net/gh/stevenschobert/instafeed.js@2.0.0rc1/src/instafeed.min.js"></script>
 	<script type="text/javascript">
 	var userFeed = new Instafeed({
-		get: 'user',
-		target: "instafeed-container",
-    	resolution: 'low_resolution',
-		accessToken: 'IGQVJVa0tBdzFjZAzZAWd05fU2FBUVhXakc1NS1NYXVrTjlYQkJhcE5ONHFVUUI4ZAGE0S1ZAoYzJyQUlLWTVQMWl4TGxVeVo3bXpLVVZATX3ZAuUXZAfbEJEOTByOERaX19xdEgzTG9MWFJqTHZAYWXNONnIxQgZDZD'
+  	get: 'user',
+  	userId: '43959771786',
+  	clientId: '430381401304878',
+  	accessToken: 'IGQVJVWjM3RFJSa1NfWC02ODF2MXkwM1pNQ0dhNVRiM3UzaFJWWEs1QkhVTm15SUVwNi1ETDNwN2lnNS1VbTN6bk94RWZAOb0hES1FoZAlQzS3d3ZA2FHUmdGZAEdCd2d5TUFQT1dBRUhYQnVyYzVwX3l3UgZDZD',
+  	resolution: 'standard_resolution',
+  	template: '<a href="{{link}}" target="_blank" id="{{id}}"><img src="{{image}}" /></a>',
+  	sortBy: 'most-recent',
+  	limit: 4,
+  	links: false
 	});
 	userFeed.run();
 	</script>
