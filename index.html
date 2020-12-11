@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>Instafeed on Your Website</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
 	<!-- <style type="text/css">
 		a img{ 
 			width: 25%;
@@ -21,7 +21,9 @@
 		get: 'user',
 		target: "instafeed-container",
     	resolution: 'low_resolution',
-		accessToken: 'IGQVJVWjM3RFJSa1NfWC02ODF2MXkwM1pNQ0dhNVRiM3UzaFJWWEs1QkhVTm15SUVwNi1ETDNwN2lnNS1VbTN6bk94RWZAOb0hES1FoZAlQzS3d3ZA2FHUmdGZAEdCd2d5TUFQT1dBRUhYQnVyYzVwX3l3UgZDZD'
+		accessToken: 'IGQVJVWjM3RFJSa1NfWC02ODF2MXkwM1pNQ0dhNVRiM3UzaFJWWEs1QkhVTm15SUVwNi1ETDNwN2lnNS1VbTN6bk94RWZAOb0hES1FoZAlQzS3d3ZA2FHUmdGZAEdCd2d5TUFQT1dBRUhYQnVyYzVwX3l3UgZDZD',
+		limit: 50,
+        template: '<a href="{{link}}"><img class="image__img  pulse1" title="{{caption}}" src="{{image}}" /><div class="image__overlay"><div class="image__title">{{caption}}</div></div></a>',
 	});
 	userFeed.run();
 	</script>
