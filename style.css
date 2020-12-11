@@ -1,32 +1,23 @@
-/* $lg: 580px; */
-
-html, 
+html,
 body {
-  margin: 0;
-  padding: 10px;
-  background: darken(whitesmoke, 10%);
+    height: 100%;
+    width: 100%;
 }
+
 #instafeed-container {
-  max-width:1080px;
-  width: 100%;
-  margin: auto;
-  display: flex;
-  flex-wrap: wrap;
-  
-  a {
-    display: flex;
-    align-items: center;
-    position: relative;
-    width: 50%;
-    background: white;
-    
-    @media only screen and (min-width: $lg) {
-      width: 25%;
-    }
-    
-    img {
-      display: block;
-      width: 100%;
-    }
-  }
+    position: absolute;
+    border-radius: 8px;
+    height: 25%;
+    width: 25%;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    /* background-image: url(https://images.pexels.com/photos/5645081/pexels-photo-5645081.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 80px -10px black;
+    overflow: hidden;
 }
