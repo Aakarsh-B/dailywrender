@@ -21,8 +21,8 @@ body {
 .instafeed-container {
     position: absolute;
     border-radius: 8px;
-    height: 450px;
-    width: 400px;
+    height: 25%;
+    width: 25%;
     top: 0;
     right: 0;
     left: 0;
@@ -34,6 +34,10 @@ body {
     background-repeat: no-repeat;
     box-shadow: 0 0 80px -10px black;
     overflow: hidden;
+}
+
+.image__img {
+    border-radius: 8px;
 }
 
 .instafeed-container-blur {
