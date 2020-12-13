@@ -3,26 +3,32 @@
 <head>
 	<title>Instafeed</title>
 	<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
 	<!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
 	<style type="text/css">
 		body {
-			background-color: rgba(0, 0, 0, 0.788);
-			font-family: 'Fredericka the Great', cursive;
+			background-color: rgb(0, 0, 0);
+			font-family: 'Bungee', cursive;
+			font-size: 36px;
 			color: white;
+			text-shadow: 0px 5px #fea602, 
+                0px 10px #fe5e02, 
+                0px 15px #fe1f02;
 		}
 		a img{ 
 			width: 25%;
 			border-radius: 8px;
-			box-shadow: 0 0 rgba(0, 0, 0, 0.24);
-			display: flex;
+		}
+		#instafeed-container{
+			margin: 20px 20px 20px 20px;
+			padding: 20px;
 		}
 	</style>
 </head>
 <body>
 	<br>
 	<br>
-	<h1 style="text-align: center">Dailywrender</h1>
+	<h1 style="text-align: center">D  A  I  L  Y  W  R  E  N  D  E  R</h1>
 	<br>
 	<br>
     	<div id="instafeed-container"></div>
@@ -36,7 +42,7 @@
 		target: "instafeed-container",
     	resolution: 'low_resolution',
 		accessToken: 'IGQVJVWjM3RFJSa1NfWC02ODF2MXkwM1pNQ0dhNVRiM3UzaFJWWEs1QkhVTm15SUVwNi1ETDNwN2lnNS1VbTN6bk94RWZAOb0hES1FoZAlQzS3d3ZA2FHUmdGZAEdCd2d5TUFQT1dBRUhYQnVyYzVwX3l3UgZDZD',
-		limit: 50,
+		// limit: 100,
         // template: '<a href="{{link}}"><img class="image__img  pulse1" title="{{caption}}" src="{{image}}" /><div class="image__overlay"><div class="image__title">{{caption}}</div></div></a>',
 	});
 	userFeed.run();
